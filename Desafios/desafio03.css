@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family:'Android';
+    font-weight:normal;
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+:root {
+    --cor1: #C5EBD6;
+    --cor2: #89CDA5;
+    --cor3: #83E1AD;
+    --cor4: #3ddc84;
+    --cor5: #2fa866;
+    --cor6: #1a5c37;
+    --cor7: #063d1e;  
+    
+    --font-padrao: 'Arial','Verdana', 'Helvetica','Sans serif';
+    --font-destaque: "Bebas Neue", 'cursive';
+    --font-titulo: 'Android', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header > h1 {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 01px 01px 10px var(--cor7);
+}
+
+body {
+    font-family: var(--font-padrao);
+    background-color: var(--cor2);   
+}
+p {
+    text-indent: 20px;
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1em;
+}
+article h2 {
+    font-family: var(--font-titulo);
+    color: var(--cor7);
+    text-align: left;
+    font-size: 1.3em;
+    background-image:linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
+article h1 {
+    font-size: 2em;
+    text-shadow: 5px 5px 10px var(--cor5);
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor7)
+    );
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.241);
+    border: 1px solid var(--cor7);
+    border-radius: 2px;
+    color: white;
+    min-height: 150px;
+}
+header > p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1em;
+    max-width: 600px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.296);
+
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+main h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor7);
+    text-shadow: 01px 01px 3px var(--cor5);
+}
+main  img {
+    width: 100%;
+}
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+main strong {
+    color: var(--cor7);
+    font-weight: bold;
+    text-shadow: 01px 01px 03px var(--cor3);
+}
+main a {
+    text-decoration: none;
+    color: var(--cor7);
+    background-color: var(--cor1);
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor6);
+}
+/*img {width 100%} para imagens dentro do conteudo principal do main*/
+div.video {
+    background-image: linear-gradient(to bottom,var(--cor6), var(--cor2));
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+nav {
+    padding: 10px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: left;
+    padding: 5px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.400);
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    color: var(--cor7);
+    background-color: var(--cor4);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.400);
+    padding: 3px;
+    text-align: left;  
+}
+     
+footer {
+    background-color: #1A5A37;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.400);
+    border-radius: 2px;
+    font-size: 1em;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
+    margin-top: 2px;
+}
+footer:hover {
+    background-color: var(--cor4);
+}
+footer > p {
+    color: white;
+    text-align: center;
+    margin: -5px -5px 0px -5px;
+}
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+article {
+    text-align: center;
+}
+article > p {
+    text-align: justify;
+}
+aside > h3 {
+    background-color: #2FA866;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+aside {
+    background-color: #C5EBD6;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 5px;
+}
+aside > ol {
+    padding: 10px;
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2705\00A0\00A0';
+}
+a.externo::after {
+    content: '\1f517';
+}

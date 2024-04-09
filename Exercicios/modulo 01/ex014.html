@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+    <link rel="stylesheet" href="ex014.css">
+    <link rel="shortcut icon" href="imagens html/favicon-heart.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Aplicando imagens dinâmicas:</h1>
+    <hr>
+    <p>As imagens dinânimas, são imagens que atraves da <mark>tag picture</mark> irão se adaptar independe do dispositivo que for acessar ao site ou imagem, celular, notebook, tv, tablets etc.</p>
+    <p>Tambem utilizamos o comando <mark>source</mark> para criar um padrão e logica para formtados e aplicação de imagens dinamicas e auto ajustaveis de acordo com a tela.</p>
+    <h2>Abrindo imagens em varios tamanhos:    
+    </h2>
+    <picture> <!--Sempre lembrar que a imagem base para aplicar o source dentro da tag picture é a imagem maior, pois estaremos trabalhando com media: max-width sempre 50+ tolerancia.-->
+        <source media="(max-width:750px)" srcset="imagens.html/truck.300.jpg" type="image/jpg">
+        <source media="(max-width:1000px)" srcset="imagens.html/truck.700.jpg" type="image/jpg">
+        <img src="imagens.html/truck.1000.jpg" alt="imagem.g">
+    </picture>
+    <h2>Aplicando audios com formatos diferentes:</h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="../musicas/coração.mp3" type="audio/mpeg">
+        <source src="../musicas/coração.ogg" type="audio/ogg">
+        <source src="../musicas/coração.wave" type="audio/wave">
+<!--<source src= "../musicas/coração.ogg" type="audio/ogg"-->
+<!--<source src="../musicas/coração.wave" type="aidio/wave"-->
+        <p>Infelizmente, seu navegador não é compativel com este arquivo.</p>
+    </audio>   
+    <p><p>Para realizar o donwload desta musica click aqui. <a href="../musicas/coração.mp3">Baixar musica MP3</a></p></p> 
+</body>
+</html>

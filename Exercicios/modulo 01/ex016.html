@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando Videos</title>
+    <link rel="shortcut icon" href="imagens.html/favicon-heart.png" type="image/x-icon">
+    <style>
+        p {font-family: Arial, Helvetica, sans-serif; }
+        h1 {font-family: Arial, Helvetica, sans-serif;}
+    </style>
+    
+</head>
+<body><!--formatos de videos compativeis para desenvolvimento web >> MP4 / M4V / WEBM/ OGV-->
+    <h1>Inserindo videos hospedados em meu próprio servidor local.</h1>
+    <hr>
+    <p>Este video está hospedado meu meu servidor:</p>
+    <video width="560" controls loop>
+        <source src="videos/meu.video.mp4fp.mp4" type="video/mp4">
+        <source src="videos/Meu.Video.mp4m.mp4" type="video/mp4">
+        <source src="videos/Meu.Video.web.webm" type="video/webm">
+        <p>Seu navegador não é compativel com o tipo de arquivo.</p>
+    </video>
+    <P>Parabens, eu consegui adicionar videos em meu projeto local, vale lembrar, video hospedado em meu servidor local.</P>
+    <!--Cuidado com hospadagem local, geralmente o custo é muito elevado. recomendado é utilizar videos com links externos, fora de minha rede de hospedagem local, ou seja youtube etc.-->
+
+    <p>Neste video abaixo, é um video que não esta hospedado em meu servidor local ou seja, ocupa muito menos espaço e tamanho de armazenamento, não deixando meu site ou projeto muito pesado.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KWntxkf25nA?si=txuXQh3yYryy6ixW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--Dica importante, sempre recomendado utilizar videos, que não estão hospedados em meu servidor local, deixando o site mais leve e fluido.-->
+    <!--Dica importante: para adicionar um video em meu site, basta apenas entrar no youtube, clicar em compartilhar, e clicar em INCORPORAR, ou seja o proprio youtubr, vai gerar um código para fazer o link do video com o site. simples e rápido.-->
+</body>
+</html>
