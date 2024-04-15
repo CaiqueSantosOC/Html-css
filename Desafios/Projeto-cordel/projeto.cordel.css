@@ -10,6 +10,11 @@
 }
 * {
     margin: 0;
+    padding: 0;
+}
+html, body {
+    min-height: 100vh;
+    background-color: white;
 }
 
 h1 {
@@ -17,7 +22,7 @@ h1 {
     font-size: 10vw;
     color: white;
     background-color: black;
-    padding: 20px;
+    padding-top: 50px;
     border-radius: 2px;
     margin: auto;
     text-align: center;
@@ -25,16 +30,17 @@ h1 {
 header p, a {
     text-align: center;
     color: white;
+    font-size: 15px;
     background-color: black;
-    padding: 5px;
-    margin: 0;
+    padding-bottom: 50px;
+    border-radius: 2px;
+    margin: auto;
     text-decoration: none;  
 }
 p {
     font-size: 3vw;
     font-family:var(--font-padrao);
-    padding: 30px;
-    margin: 20px
+    line-height: 2em;
 }
 
 p a:hover {
@@ -43,6 +49,24 @@ p a:hover {
 header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3.5vw;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    
+    padding-left: 30px;
+
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem p {
+    background-color: rgba(46, 46, 46, 0.447);
+    color: white;
+    width: 400px;
 }
 #img01 {
     background-image: url(imagens/background001.jpg);
@@ -74,11 +98,13 @@ footer p {
     color: white;
     font-size: 15px;    
     border-radius: 2px;
-    margin: 0;
+    margin: auto;
 }
 footer a {
     text-decoration: none;
     color: white;
+    padding: 10px;
+    
 }
 
 footer a:hover {
