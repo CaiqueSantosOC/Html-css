@@ -16,12 +16,19 @@
             border-radius: 03px;
             
         }
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2em;
+            text-shadow: 01px 01px 01px rgba(0, 0, 0, 0.39);
+        }
         td, th {
             font-family: Arial, Helvetica, sans-serif;
             border: 01px solid black;
             padding: 10px;
             max-width: 500px;
-            min-width: 180px;   
+            min-width: 200px;   
         }
         td.num {
             text-align: right;
@@ -65,12 +72,14 @@
         TFOOT
             tr, td, th    
     -->
+    
     <div id="fundo">
         <table>
+            <caption>Exemplo de tabela grande em HTML + CSS</caption>
             <thead>
                 <tr>
-                    <th>ESTADO</th>
-                    <th>POPULAÇÃO</th>
+                    <th scope="col">ESTADO</th>
+                    <th scope="col" style="width: 100px;">POPULAÇÃO</th>
                 </tr>
             </thead>
             <tbody>
@@ -121,7 +130,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>TOTAL DE HABITANTES</th>
+                    <th scope="row">TOTAL DE HABITANTES</th>
                     <td class="num"><strong>203.062.512</strong></td>
                 </tr>
             </tfoot>
