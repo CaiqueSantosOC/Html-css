@@ -14,20 +14,21 @@
             background-color: black;
             color: white;
             border-radius: 03px;
-            width: 100%vh;
+            
         }
         td, th {
             font-family: Arial, Helvetica, sans-serif;
             border: 01px solid black;
             padding: 10px;
-            width: 500px;   
+            max-width: 500px;
+            min-width: 180px;   
         }
         td.num {
             text-align: right;
         }
 
         th {
-            background-color: rgba(252, 0, 0, 0.479);
+            background-color: rgba(10, 158, 30, 0.644);
         }
         
 
@@ -35,10 +36,26 @@
             border-collapse: collapse;
             margin: auto;
         }
+
+        body {
+            margin: 15px;
+            background-image: linear-gradient(to top,#145a0e,#145a0e8f,#145a0e15);
+        }
+
+        div#fundo {
+            background-color: aliceblue;
+            max-width: 500px;
+            min-width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 01px 02px 05px 2px black;
+            display: block;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
-    <h1>Tabelas grandes:</h1>
+    <h1>TOTAL POPULAÇÃO POR ESTADO:</h1>
 <!--ANATAMIA DE TABELAS GRANDES
     TABLE
         THEAD
@@ -48,68 +65,68 @@
         TFOOT
             tr, td, th    
     -->
-    <table>
-        <thead>
-            <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">44.411.238</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">20.538.718</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">16.054.524</td>
-            </tr>
-            <tr>
-                <td>Bahia</td>
-                <td class="num">14.141.626</td>
-            </tr>
-            <tr>
-                <td>Paraná</td>
-                <td class="num">11.444.380</td>
-            </tr>
-            <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">10.882.965</td>
-            </tr>
-            <tr>
-                <td>Pernambuco</td>
-                <td class="num">9.058.931</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td class="num">8.794.957</td>
-            </tr>
-            <tr>
-                <td>Pará</td>
-                <td class="num">8.121.05</td>
-            </tr>
-            <tr>
-                <td>Santa Catarina</td>
-                <td class="num">7.610.361</td>
-            </tr>
-            <tr>
-                <td>Goías</td>
-                <td class="num">7.294.957</td>
-            </tr>
-
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>TOTAL DE HABITANTES</th>
-                <td class="num"><strong>203.062.512</strong></td>
-            </tr>
-
-        </tfoot>
-    </table>
+    <div id="fundo">
+        <table>
+            <thead>
+                <tr>
+                    <th>ESTADO</th>
+                    <th>POPULAÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">20.538.718</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">16.054.524</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14.141.626</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11.444.380</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">10.882.965</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9.058.931</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8.794.957</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8.121.05</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">7.610.361</td>
+                </tr>
+                <tr>
+                    <td>Goías</td>
+                    <td class="num">7.294.957</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>TOTAL DE HABITANTES</th>
+                    <td class="num"><strong>203.062.512</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
     
 </body>
 </html>
